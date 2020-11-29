@@ -36,74 +36,78 @@ class Content extends Component {
         })
     }
 
-
-
     render() {
         return (
             <div className="container">
-
-                <div className="row">
-                    <div className="col-2">
+                <div style={{ backgroundColor: '#636363' }}>
+                    <div className="text-center bg-dark text-white">
+                        <h3 className="p-4 font-weight-bold">Try Glasses App Online</h3>
                     </div>
-                    <div className="col-3 position-relative" style={{ alignItems: 'center' }}>
-                        <img className="w-100" src="./img/model.jpg" alt="" />
-                        <img className="position-absolute" src={this.state.imgSrc} style={{ top: 80, left: 58, width: '60%' }} alt />
-                        <div className="position-absolute text-left" style={{ bottom: 0, left: 0, width: '-webkit-fill-available', height: '35%', backgroundColor: '#fdbd8ec9', margin: '0 15px' }}>
-                            <h4 className="text-primary font-weight-bold">{this.state.name}</h4>
-                            <p className="text-white">{this.state.desc}</p>
+                    <div className="my-4">
+                        <div className="row">
+                            <div className="col-2">
+                            </div>
+                            <div className="col-3 position-relative" style={{ alignItems: 'center' }}>
+                                <img className="w-100" src="./img/model.jpg" alt="" />
+                                <img className="position-absolute" src={this.state.imgSrc} style={{ top: 80, left: 58, width: '60%' }} alt />
+                                <div className="position-absolute text-left px-3" style={{ bottom: 0, left: 0, width: '-webkit-fill-available', height: '35%', backgroundColor: '#fdbd8ec9', margin: '0 15px' }}>
+                                    <h4 className="text-primary font-weight-bold">{this.state.name}</h4>
+                                    <p className="text-white">{this.state.desc}</p>
+                                </div>
+                            </div>
+                            <div className="col-2">
+                            </div>
+                            <div className="col-3 d-flex" style={{ alignItems: 'center' }}>
+                                <img className="w-100" src="./img/model.jpg" alt="" />
+                            </div>
                         </div>
                     </div>
-                    <div className="col-2">
-                    </div>
-                    <div className="col-3 d-flex" style={{ alignItems: 'center' }}>
-                        <img className="w-100" src="./img/model.jpg" alt="" />
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-2 d-flex" style={{ alignItems: 'center' }}>
-                        <img className="w-100" src="./img/g1.jpg" alt="" onClick={() => {
-                            this.changeGlass('1');
-                        }} />
-                    </div>
-                    <div className="col-2 d-flex" style={{ alignItems: 'center' }}>
-                        <img className="w-100" src="./img/g2.jpg" alt="" onClick={() => {
-                            this.changeGlass('2');
-                        }} />
-                    </div>
-                    <div className="col-2 d-flex" style={{ alignItems: 'center' }}>
-                        <img className="w-100" src="./img/g3.jpg" alt onClick={() => {
-                            this.changeGlass('3');
-                        }} />
-                    </div>
-                    <div className="col-2 d-flex" style={{ alignItems: 'center' }}>
-                        <img className="w-100" src="./img/g4.jpg" alt="" onClick={() => {
-                            this.changeGlass('4');
-                        }} />
-                    </div>
-                    <div className="col-2 d-flex" style={{ alignItems: 'center' }}>
-                        <img className="w-100" src="./img/g5.jpg" alt="" onClick={() => {
-                            this.changeGlass('5');
-                        }} />
-                    </div>
-                    <div className="col-2 d-flex" style={{ alignItems: 'center' }}>
-                        <img className="w-100" src="./img/g6.jpg" alt="" onClick={() => {
-                            this.changeGlass('6');
-                        }} />
-                    </div>
-                    <div className="col-2 d-flex" style={{ alignItems: 'center' }}>
-                        <img className="w-100" src="./img/g7.jpg" alt="" onClick={() => {
-                            this.changeGlass('7');
-                        }} />
-                    </div>
-                    <div className="col-2 d-flex" style={{ alignItems: 'center' }}>
-                        <img className="w-100" src="./img/g8.jpg" alt="" onClick={() => {
-                            this.changeGlass('8');
-                        }} />
-                    </div>
-                    <div className="col-2 d-flex" style={{ alignItems: 'center' }}>
-                        <img className="w-100" src="./img/g9.jpg" alt="" onClick={() => {
-                            this.changeGlass('9');
-                        }} />
+                    <div className="row" style={{ backgroundColor: 'white' }}>
+                        <div className="col-2 d-flex" style={{ alignItems: 'center' }}>
+                            <img className="w-100" src="./img/g1.jpg" alt="" onClick={() => {
+                                this.changeGlass('1');
+                            }} />
+                        </div>
+                        <div className="col-2 d-flex" style={{ alignItems: 'center' }}>
+                            <img className="w-100" src="./img/g2.jpg" alt="" onClick={() => {
+                                this.changeGlass('2');
+                            }} />
+                        </div>
+                        <div className="col-2 d-flex" style={{ alignItems: 'center' }}>
+                            <img className="w-100" src="./img/g3.jpg" alt onClick={() => {
+                                this.changeGlass('3');
+                            }} />
+                        </div>
+                        <div className="col-2 d-flex" style={{ alignItems: 'center' }}>
+                            <img className="w-100" src="./img/g4.jpg" alt="" onClick={() => {
+                                this.changeGlass('4');
+                            }} />
+                        </div>
+                        <div className="col-2 d-flex" style={{ alignItems: 'center' }}>
+                            <img className="w-100" src="./img/g5.jpg" alt="" onClick={() => {
+                                this.changeGlass('5');
+                            }} />
+                        </div>
+                        <div className="col-2 d-flex" style={{ alignItems: 'center' }}>
+                            <img className="w-100" src="./img/g6.jpg" alt="" onClick={() => {
+                                this.changeGlass('6');
+                            }} />
+                        </div>
+                        <div className="col-2 d-flex" style={{ alignItems: 'center' }}>
+                            <img className="w-100" src="./img/g7.jpg" alt="" onClick={() => {
+                                this.changeGlass('7');
+                            }} />
+                        </div>
+                        <div className="col-2 d-flex" style={{ alignItems: 'center' }}>
+                            <img className="w-100" src="./img/g8.jpg" alt="" onClick={() => {
+                                this.changeGlass('8');
+                            }} />
+                        </div>
+                        <div className="col-2 d-flex" style={{ alignItems: 'center' }}>
+                            <img className="w-100" src="./img/g9.jpg" alt="" onClick={() => {
+                                this.changeGlass('9');
+                            }} />
+                        </div>
                     </div>
                 </div>
             </div>
